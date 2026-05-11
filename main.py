@@ -1,44 +1,25 @@
 import tkinter as tk
 from tkcalendar import Calendar
 
-# 메모 저장용 딕셔너리
-memo_data = {}
-
-
-def select_date():
-    selected = cal.get_date()
-    entry.delete(0, tk.END)
-
-    # 기존 메모 불러오기
-    if selected in memo_data:
-        entry.insert(0, memo_data[selected])
-
-
-def save_memo():
-    selected = cal.get_date()
-    memo_data[selected] = entry.get()
-    print(memo_data)
-
-
-# 창
 root = tk.Tk()
-root.title("Calendar Todo")
-root.geometry("400x500")
+root.title("Todo App")
+root.geometry("390x700")
+root.resizable(False, False)
 
-# 달력
-cal = Calendar(root, selectmode='day')
-cal.pack(pady=10)
+# 제목
+title = tk.Label(root, text="       Todo Calendar", font=("Arial", 18))
+title.place(x=90, y=20)
 
-# 날짜 선택 버튼
-btn_select = tk.Button(root, text="날짜 선택", command=select_date)
-btn_select.pack()
+# 달력 (절반)
+cal = Calendar(root, selectmode='day', font=("Arial", 16))
+cal.place(x=20, y=80, width=350, height=300)
 
 # 입력창
-entry = tk.Entry(root, width=30)
-entry.pack(pady=10)
+entry = tk.Entry(root)
+entry.place(x=70, y=420, width=250)
 
-# 저장 버튼
-btn_save = tk.Button(root, text="메모 저장", command=save_memo)
-btn_save.pack()
+# 버튼
+btn = tk.Button(root, text="저장")
+btn.place(x=150, y=460)
 
 root.mainloop()
