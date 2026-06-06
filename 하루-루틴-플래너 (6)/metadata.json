@@ -1,0 +1,6 @@
+{
+  "name": "하루 루틴 플래너",
+  "description": "AI 기반 기분별 일정 추천, 미래 타임캡슐 및 완벽한 인터랙티브 시간표와 할 일 관리 플래너",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
