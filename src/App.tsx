@@ -224,7 +224,7 @@ export default function App() {
           });
 
           const title = `⏰ 계획된 할 일 마감 시각입니다!`;
-          const body = `"${todo.title}" 계획의 설정 정시가 다다랐습니다. 차근추근 완료를 기입해보세요!`;
+          const body = `"${todo.title}" 계획의 설정 정시가 다 다랐습니다. 차근추근 완료를 기입해보세요!`;
 
           sendDesktopNotification(title, body);
 
