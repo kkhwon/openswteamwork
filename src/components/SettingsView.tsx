@@ -188,7 +188,7 @@ export default function SettingsView({
           <div className="bg-indigo-50 p-4 rounded-2xl border border-indigo-100/50 flex justify-between items-center text-slate-800">
             <div className="space-y-0.5">
               <span className="text-[10px] font-bold text-indigo-500 uppercase tracking-wider block">현재 인공 시스템 시각</span>
-              <span className="text-sm font-extrabold tracking-tight block font-mono">{selectedDate} (화)</span>
+              <span className="text-sm font-extrabold tracking-tight block font-mono">{selectedDate}</span>
             </div>
             
             <Clock className="w-6 h-6 text-indigo-500 animate-spin" style={{ animationDuration: "12s" }} />
