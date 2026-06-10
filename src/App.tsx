@@ -412,7 +412,7 @@ export default function App() {
             H
           </div>
           <div>
-            <h1 className="text-base font-black text-slate-900 tracking-tight">하루 루틴 플래너</h1>
+            <h1 className="text-base font-black text-slate-900 tracking-tight">아직 안 했니?얼른해!</h1>
             <span className="text-[10px] font-bold text-pastel-500 uppercase tracking-widest block -mt-0.5">AI Smart Web App</span>
           </div>
         </div>
